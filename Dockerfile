@@ -62,6 +62,6 @@ RUN rm gradle-2.0-bin.zip
 EXPOSE 8000
 EXPOSE 8080
 
-CMD chmod +x curriculum/makeTreeJson.sh
-#CMD cd curriculum/courses/gencourse/ && ./gen-course-server.py
-CMD /bin/bash
+RUN chmod +x curriculum/makeTreeJson.sh
+CMD cd curriculum/courses/gencourse/ && ./gen-course-server.py
+#CMD /bin/bash
