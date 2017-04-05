@@ -58,6 +58,7 @@ RUN wget https://services.gradle.org/distributions/gradle-2.0-bin.zip
 RUN unzip gradle-2.0-bin.zip
 RUN mv gradle-2.0 /opt/
 RUN rm gradle-2.0-bin.zip
+RUN export PATH=$PATH:/opt/gradle-2.0/bin/
 
 EXPOSE 8000
 EXPOSE 8080
