@@ -1,3 +1,4 @@
+cp ~/.ssh/id_rsa .
 docker build -t gen-curriculum-image .
 docker run \
    --net=host -d  \
