@@ -54,15 +54,16 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 ENV PATH $JAVA_HOME/bin:$PATH
 
 # Install Gradle
-RUN wget https://services.gradle.org/distributions/gradle-2.0-bin.zip
-RUN unzip gradle-2.0-bin.zip
-RUN mv gradle-2.0 /opt/
-RUN rm gradle-2.0-bin.zip
-RUN export PATH=$PATH:/opt/gradle-2.0/bin/
+RUN wget https://downloads.gradle.org/distributions/gradle-3.5-bin.zip
+RUN unzip gradle-3.5-bin.zip
+RUN mv gradle-3.5 /opt/
+RUN rm gradle-3.5-bin.zip
+ENV PATH $PATH:/opt/gradle-3.5/bin/
 
 EXPOSE 8000
 EXPOSE 8080
 
 RUN chmod +x curriculum/makeTreeJson.sh
+RUN cd curriculum/courses/gencourse/ && gradle course &
 CMD cd curriculum/courses/gencourse/ && ./gen-course-server.py
 #CMD /bin/bash
