@@ -1,7 +1,7 @@
 +++
 date = "2017-04-10T14:21:00-05:00"
 title = "Introduction"
-weight = 1
+weight = 1 
 +++
 
 This is a guide for how to use the power tools course generation / enablement asset brought to you by the Vanguard team.
@@ -14,13 +14,7 @@ For example, in order to successfully prove out DSE Analytics Sql capabilities f
 
 ### What is included?
 
-This field asset includes a web application
-
-* Machine Learning
-* Streaming analytics
-* Batch analytics
-* Real-time JDBC / SQL (dynamic caching)
-* DSEFS
+Course generator
 
 ### Business Take Aways
 

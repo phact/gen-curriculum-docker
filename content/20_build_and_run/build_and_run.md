@@ -4,15 +4,15 @@ title = "Build and Run"
 weight = 3
 +++
 
-# gen-curriculum-docker
+## gen-curriculum-docker
 
-# docker gen-curriculum
+## docker gen-curriculum
 
 This is a docker container for gen-curriculum.
 
-##clone the repo: git clone https://github.com/phact/gen-curriculum-docker
+    clone the repo: git clone https://github.com/phact/gen-curriculum-docker
 
-##for OSX:
+### for OSX:
 
 ```
 #setup
@@ -40,7 +40,9 @@ docker-machine ip default
 ```
 
 
-## for linux: install docker https://docs.docker.com/engine/installation/linux
+### for linux:
+
+install docker https://docs.docker.com/engine/installation/linux
 
 add your user to the docker group `sudo gpasswd -a ${USER} docker`
 

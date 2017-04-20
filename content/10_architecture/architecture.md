@@ -11,9 +11,9 @@ This section details the architecture demonstrated in this reference field asset
 <div title="rendered dynamically" align="middle">
 {{< mermaid >}}
 graph LR
-E["Enablement repo"]--content is parsed and visualized in--A
-A["Course Gen App"]--generates-->B["coursegen.course"]
-B--"Gradle Build"-->D["Asciidr Enablement Material"]
+E["Enablement repo"]-- content is parsed and visualized in -->A["Course Gen App"]
+A-- generates -->B["coursegen.course"]
+B-- Gradle Build -->D["Asciidr Enablement Material"]
 {{< /mermaid >}}
 </div>
 
