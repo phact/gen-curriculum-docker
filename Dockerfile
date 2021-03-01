@@ -1,6 +1,6 @@
 # Dockerfile for base collectd install
 
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 MAINTAINER Sebastian Estevez estevezsebastian@gmail.com
 
 # Install all apt-get utils and required repos
